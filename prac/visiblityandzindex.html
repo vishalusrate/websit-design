@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>visiblity and zindex</title>
+</head>
+  <style>
+  .box{
+    height:200px;
+    width:200px;
+    margin:12px;
+    border:'1px solid black';
+}
+#box1{
+ background-color:red;   
+    
+}
+#box2{
+/* visiblity : hidden hide element but space show  */
+/* visibility: hidden; */
+/* display : block is hide block and space both  */
+/* display: none; */
+/* z-index: is the apply only the relative , absolute , static , fixed position; */
+position:relative;
+top: 45px;
+z-index: 12;
+background-color:purple;   
+    
+}
+#box3{
+    top: 12px;
+    position: relative;
+    z-index: 15;
+ background-color:green;   
+    
+}
+#box4{
+ background-color:yellow;   
+    
+}
+  </style>
+<body>
+    <h1>
+        visiblity and zindex
+    </h1>
+    <div class="box" id="box1">
+    </div>
+    <div class="box" id="box2">
+    </div>
+    <div class="box" id="box3">
+    </div>
+    <div class="box" id="box4">
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

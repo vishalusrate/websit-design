@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Size in html</title>
+<style>
+    html{
+        font-size: 10px;
+    }
+    .container{
+        /* browser ke hisab se width adjust karta hai uske liye aap vw ka use kar sakte hai  */
+        /* width: 600px; */
+        width: 100vw;
+        /* browser ki height ko adjust karna hai to vh ka use kar sakte hai .... isse wo browser ki height ke hisaab se adjust kar lenga */
+        /* height: 300px; */
+        /* vh aur vw aap browser ke hisab se height aur width ko adjust karne ke liye use kar sakte hai */
+        height: 100vh;
+        border: 1px solid black;
+        font-size: 10px;
+    }
+    h1{
+        text-align: center;
+    }
+    #heading11{
+        /* paremts ke 10 * parent font-sizse kar sakte hai ....  */
+        font-size: 2em;
+        /* padding is current element font-sizse * padding (2) leta hai to iski padding 20 * 2 = 40 hogi */
+        padding: 2em;
+    }
+    #heading12{
+        /* html ke hisab se multiply hota hai 10rem * html font size   */
+        font-size: 10rem;
+    }
+</style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="heading11">This is the heading first</h1>
+        <h1 id="heading12">This is the heading Second</h1>
+        <h1 id="heading13">This is the heading Third</h1>
+    </div>
+</body>
+</html>

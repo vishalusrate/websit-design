@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation and keyframes in css </title>
+</head>
+<style>
+    .container{
+        display: flex;
+        background-color: red;
+        width: 100vw;
+        height: 100vh;
+        flex-direction: column;
+        
+    }
+    .box{
+        padding: 20px;
+        position: absolute;
+        margin: 20px;
+        width:200px;
+        display: flex;
+        height: 200px;
+        background-color: yellow;
+        /* animation name  */
+        animation-name: vishal1;
+        /* animation ko kitne time tak run karna hai uske liye isko use karte hai */
+        animation-iteration-count: infinite;
+        /* animation time  */
+        animation-duration: 4s;
+        /* animation kasie chalna hai backword ya forward... aur last wale changes ko agar apko fix rakhna hai to isko use karte hai  */
+        /* animation-fill-mode:forwards; */
+        /* animation  effect */
+        /* animation-timing-function: ease-in; */
+
+
+    }
+    @keyframes vishal1 {
+        0%{
+            top: 0%;
+            left: 0%;
+        }
+        25%{
+            top: 0%;
+            left: 25%;
+        }
+        50%{
+            top: 0%;
+            left: 50%;
+        }
+        75%{
+            top: 0%;
+            left: 75%;
+        }
+        100%{
+            top: 0%;
+            left: 100%;
+        }
+    }
+    @keyframes vishal {
+        from{
+            width:300px
+        }
+        to{
+            width: 400px;
+        }
+    }
+</style>
+<body>
+    
+    <div class="container">
+        <div class="box">
+            THis is the box here.
+        </div>
+        <div class="box">
+            THis is the box here.
+        </div>
+        <div class="box">
+            THis is the box here.
+        </div>
+        <div class="box">
+            THis is the box here.
+        </div>
+    </div>
+</body>
+</html>

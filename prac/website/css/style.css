@@ -1,0 +1,201 @@
+/* css reset  */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* global variable */
+:root{
+    --navbar-height:100vh;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+#navbar::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    position: absolute;
+    z-index: -1;
+
+}
+/* navbar logo image  */
+#logo{
+   margin: 23px 10px;
+
+}
+/* navbar logo image  */
+#logo img{
+    height: 30px;
+    width: 30px;
+    filter: invert(100%);
+}
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo 2', cursive;
+
+}
+#navbar ul li{
+    margin: 12px 12px;
+    list-style: none;
+    cursor: pointer;
+}
+#navbar ul li a{
+   color: white;
+   display: block;
+   padding: 3px 12px;
+   text-decoration: none;
+}
+#navbar ul li a:hover{
+   background-color: white;
+   border: 1px solid white;
+   border-radius: 12px;
+   color: black;
+}
+#home{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    justify-content: center;
+    align-items: center;    
+}
+#home::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: url('../image/fbanner.jpeg');
+    position: absolute;
+    z-index: -1;
+    opacity: 0.89;
+  
+}
+#home h2{
+    text-align: center;
+    font-family: 'PT Sans', sans-serif;
+}
+#home p{
+    font-size: 1rem;
+    font-family: 'PT Sans', sans-serif;
+}
+/* services section  */
+#services{
+    margin: 20px;
+    display: flex;
+}
+#services .box{
+    border: 1px solid purple;
+    margin: 25px 3px;
+    padding:13px;
+    border-radius: 20px;
+    background-color: beige;
+}
+#services .box img{
+    height: 160px;
+    border-radius: 3px;
+    display: block;
+    margin: 8px auto;
+}
+#services .box p{
+    font-family: 'Baloo 2', cursive;
+
+}
+/* our clients  */
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-section::before{
+    content: "";
+    height: 42%;
+    width: 100%;
+    background: url('../image/fbanner.jpeg');
+    position: absolute;
+    z-index: -1;
+    opacity: 0.7;
+}
+#clients img{
+    width: 23px;
+    height: 20px;
+    width: 91px;
+    height: 113px;
+
+}
+.clients-section{
+    padding: 13px;
+    margin: 13px;
+    border: 1px solid black;
+    border-radius: 8px;
+    background-color:azure;
+}
+
+/* contact us form */
+#contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 23px;
+}
+#contect-form{
+    position: relative;
+    border: 1px solid yellow;
+    margin-top: 15px;
+}
+#contect-form::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    background: url('../image/backimage.jpg');
+    z-index: -2;
+    opacity: 0.8;
+}
+#contact label{
+    font-size: 16px;
+    font-weight: bold;
+}
+#contact input,textarea{
+    font-size: 16px;
+    font-family: 'Baloo 2', cursive;
+    width: 100%;
+}
+/* footer css  */
+#footer{
+    background-color: black;
+    color: white;
+    font-family: 'Baloo 2', cursive;
+}
+/* utility class  */
+.h-primary{
+    font-family: 'Baloo 2', cursive;
+    font-size: 1.28rem;
+    padding: 13px;
+}
+.h-secondary{
+    font-family: 'Baloo 2', cursive;
+    font-size: 1rem;
+    padding: 13px;
+}
+.btn{
+    padding: 7px;
+    background-color: bisque;
+    color: black;
+    margin: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.center{
+    text-align: center;
+}
